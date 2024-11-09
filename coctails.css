@@ -5,8 +5,56 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
-    background-image: url(https://t4.ftcdn.net/jpg/08/47/93/57/360_F_847935751_WHFxIEQi3pg2gnXoWuhorZmWe5PgltQn.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://unsplash.com/photos/a-djs-deck-with-a-red-light-behind-it-l3mbHsZWVSw);
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-container {
+  max-width: 600px;
+  background-color: #333333;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #444444;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
 }

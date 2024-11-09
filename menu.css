@@ -1,66 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 body {
-  font-family: Arial, sans-serif;
-  background-image: url(https://unsplash.com/photos/a-djs-deck-with-a-red-light-behind-it-l3mbHsZWVSw);
-  color: #ffffff;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1604152135912-04a3bfb6b5d6");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-container {
-  max-width: 700px;
-  background-color: #ffffff;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .category-title {
-  font-size: 1.8em;
+  font-size: 2rem;
   color: #d2691e;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: bold;
-  border-bottom: 2px solid #d2691e;
-  padding-bottom: 5px;
-  margin-top: 30px;
+  border-bottom: 3px solid #d2691e;
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
-ul.dishes-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.dishes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.dish-item {
-  background-color: #f9f9f9;
-  margin: 10px 0;
-  padding: 12px 15px;
-  border-radius: 5px;
-  border-left: 4px solid #d2691e;
-  font-size: 1.1em;
+.dish-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dish-name {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .dish-description {
   color: #666;
-  font-size: 0.9em;
-  margin-top: 5px;
+  font-size: 1rem;
+  font-style: italic;
 }
 
-.subheading {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #333;
-  margin-top: 25px;
+@media (max-width: 768px) {
+  .dishes-grid {
+    grid-template-columns: 1fr;
+  }
 }

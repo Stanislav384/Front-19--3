@@ -3,29 +3,65 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Мій сайт </title>
+    <title>Главная</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
-<body>
-  <header class="header">
-    <nav class="nav">
-      <a href="#" class="nav_logo">CodingLab</a>
-      <ul class="nav_items">
-        <li class="nav_item">
-          <a href="index.html" class="nav_link">Home</a>
-          <a href="coctails.html" class="nav_link">Coctails</a>
-          <a href="menu.html" class="nav_link">Menu</a>
-          <a href="#" class="nav_link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="nav_logo">Ресторан</a>
+        <ul class="nav_items">
+          <li><a href="index.html" class="nav_link active">Главная</a></li>
+          <li><a href="coctails.html" class="nav_link">Коктейли</a></li>
+          <li><a href="menu.html" class="nav_link">Меню</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <main>
-        <!-- КОНТЕНТ -->
+    <!-- Основной контент -->
+    <main class="main-container">
+      <!-- Приветственный блок -->
+      <section class="welcome-section">
+        <h1 class="welcome-title">Добро пожаловать в наш ресторан!</h1>
+        <p class="welcome-text">
+          Мы рады предложить вам изысканную кухню, уникальные коктейли и незабываемую атмосферу. 
+          Наш ресторан сочетает в себе уют и современность, предлагая блюда и напитки на любой вкус.
+        </p>
+      </section>
+
+      <!-- Почему выбрать нас -->
+      <section class="why-us-section">
+        <h2 class="why-us-title">Почему выбирают нас?</h2>
+        <ul class="why-us-list">
+          <li>Широкий выбор блюд от холодных закусок до изысканных десертов.</li>
+          <li>Авторские коктейли, созданные нашими опытными барменами.</li>
+          <li>Приятная атмосфера с современным интерьером.</li>
+          <li>Индивидуальный подход к каждому гостю.</li>
+        </ul>
+      </section>
+
+      <!-- Разделы -->
+      <section class="sections">
+        <!-- Коктейли -->
+        <div class="section-card">
+          <h2 class="section-title">Коктейли</h2>
+          <p class="section-text">Откройте для себя наше разнообразие коктейлей, приготовленных с душой.</p>
+          <a href="coctails.html" class="section-button">Посмотреть коктейли</a>
+        </div>
+
+        <!-- Меню -->
+        <div class="section-card">
+          <h2 class="section-title">Меню</h2>
+          <p class="section-text">Наше меню предлагает блюда на любой вкус, приготовленные с использованием только свежих продуктов.</p>
+          <a href="menu.html" class="section-button">Посмотреть меню</a>
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
